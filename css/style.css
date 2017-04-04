@@ -1,6 +1,8 @@
 body {
   width: 1440px;
   border-color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
 .clearfix::after {
@@ -26,6 +28,7 @@ html {
 }
 
 .main-header {
+  
   background-color: #eeeeee;
 }
 
