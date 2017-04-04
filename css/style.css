@@ -1,5 +1,6 @@
 body {
   width: 1440px;
+  border-color: #ffffff;
 }
 
 .clearfix::after {
@@ -22,6 +23,10 @@ html {
 .container {
   width: 1200px;
   margin: 0 auto;
+}
+
+.main-header {
+  background-color: #eeeeee;
 }
 
 .header-logo {
@@ -47,6 +52,10 @@ html {
   width: 1200px;
 }
 
+.slide {
+  min-height: 415px;
+  background: url("../img/slide1.png") no-repeat 450px;
+}
 
 .service-block {
   padding-top: 80px;
