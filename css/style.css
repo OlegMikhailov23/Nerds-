@@ -1,0 +1,111 @@
+body {
+  width: 1440px;
+}
+
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header-logo {
+  float: left;
+  width: 160px;
+  height: 65px;
+}
+
+.main-navigation {
+  float: left;
+  margin-left: 200px;
+  width: 440px;
+}
+
+.buy-block {
+  float: right;
+  margin-left: 280px;
+  width: 80px;
+}
+
+.slides {
+  float: left;
+  width: 1200px;
+}
+
+
+.service-block {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  width: 400px;
+  float: left;
+}
+.service-block p {
+  padding: 0;
+  margin: 0;
+  padding-right: 138px;
+}
+
+
+.about-us-left {
+  width: 800px;
+  float: left;
+}
+
+.about-us-right {
+  float: right;
+  width: 400px;
+}
+
+.partner-item {
+  float: left;
+  width: 300px;
+  height: 182px;
+}
+
+.map {
+  width: 1440px;
+  margin-left: -140px;
+}
+
+
+
+.main-footer-social {
+  float: left;
+  width: 300px;
+}
+
+.main-footer-text {
+  float: left;
+  margin-left: 100px;
+  width: 580px;
+}
+
+.main-footer {
+  padding-top: 68px;
+  padding-bottom: 68px;
+}
+
+
+
+
+
+
+
+
+
+
