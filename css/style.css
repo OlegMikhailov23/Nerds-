@@ -1,8 +1,13 @@
 body {
-  width: 1440px;
-  border-color: #ffffff;
+  min-width: 1200px;
+  background-color: #ffffff;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #333333;
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .clearfix::after {
@@ -24,11 +29,13 @@ html {
 
 .container {
   width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
 }
 
 .main-header {
-  
+  padding-top: 50px;
   background-color: #eeeeee;
 }
 
@@ -41,46 +48,176 @@ html {
 .main-navigation {
   float: left;
   margin-left: 200px;
-  width: 440px;
+  width: 450px;
 }
 
 .buy-block {
+  padding-top: 29px;
   float: right;
-  margin-left: 280px;
+  margin-left: ;
   width: 80px;
+}
+
+.buy-block a {
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #333333;
+  text-decoration: none;
 }
 
 .slides {
   float: left;
   width: 1200px;
+  
 }
 
 .slide {
   min-height: 415px;
-  background: url("../img/slide1.png") no-repeat 450px;
+  background: url("../img/slide1.png") no-repeat 432px 20px;
+  padding-bottom: 80px;
+}
+
+.slide-title {
+  padding-top: 80px;
+  width: 380px;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  font-family: inherit;
+  color: #000000;
+}
+
+.slide-text p {
+  width: 360px;
+  padding-top: 15px;
+}
+
+.slide-text a {
+  display: inline-block;
+  margin-top: 18px;
+  margin-bottom: ;
+  padding: 17px 53px;
+  line-height: 18px;
+  font-family: inherit;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #ff6666;
+  border-radius: 3px;
+}
+
+.service {
+  border-bottom: 2px solid #eeeeee;
 }
 
 .service-block {
   padding-top: 80px;
   padding-bottom: 80px;
-  width: 400px;
+  width: 300px;
   float: left;
+  margin-right: 100px;
 }
+
+.service-block:last-child {
+  margin: 0;
+}
+
 .service-block p {
   padding: 0;
   margin: 0;
-  padding-right: 138px;
+  padding-top: 18px;
 }
 
+.service-block h3 {
+  margin: 0;
+  padding: 0;
+  padding-top: 17px;
+  font-size: 24px;
+  line-height: 30px;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.order-btn {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 31px;
+  padding: 13px 40px;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background-color: #00ca74;
+}
+
+.service-block:first-child a {
+  background-color: #fb565a;
+}
+
+.service-block:last-child a {
+  background-color: #efc84a;
+}
 
 .about-us-left {
-  width: 800px;
+  width: 670px;
   float: left;
 }
 
+.about-us-left h2 {
+  margin: 0;
+  padding: 0;
+  padding-top: 72px;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+  font-family: inherit;
+}
+
+.about-us-left p {
+  padding-top: 15px;
+}
+
+.about-us-left h4 {
+  margin: 0;
+  padding: 0;
+  padding-top: 24px;
+  font-size: inherit;
+  line-height: inherit;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.about-us-left ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-left: 37px;
+}
+
+.about-us-left li {
+  position: relative;
+  padding-top: 25px;
+}
+
+.about-us-left li::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: -36px;
+  top: 34px;
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
+}
+
+
 .about-us-right {
   float: right;
-  width: 400px;
+  margin-top: 40px;
+  width: 360px;
 }
 
 .partner-item {
@@ -93,7 +230,6 @@ html {
   width: 1440px;
   margin-left: -140px;
 }
-
 
 
 .main-footer-social {
@@ -111,6 +247,39 @@ html {
   padding-top: 68px;
   padding-bottom: 68px;
 }
+
+.main-navigation a {
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #333333;
+  text-decoration: none;
+}
+
+.main-navigation ul {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  list-style: none;
+}
+
+.main-navigation li {
+  display: inline-block;
+  margin-right: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  padding-top: 29px;
+  text-transform: uppercase;
+  color: #333333;
+  vertical-align: top;
+}
+
+.main-navigation li:last-child {
+  margin-right: 0;
+}
+
+
 
 
 
