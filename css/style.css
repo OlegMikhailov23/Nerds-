@@ -43,6 +43,8 @@ html {
   float: left;
   width: 160px;
   height: 65px;
+  background-image: url(../img/sprite-logo.png);
+  background-position: -718px -60px;
 }
 
 .main-navigation {
@@ -220,10 +222,122 @@ html {
   width: 360px;
 }
 
-.partner-item {
+.about-us-right h4 {
+  margin: 0;
+  padding: 0;
+  margin-top: 25px;
+  margin-left: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: inherit;
+  color: #000000;
+}
+
+.about-us-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  margin-top: 41px;
+}
+
+.about-us-right li {
+  display: inline-block;
+  width: 110px;
+  margin-right: 10px;
+}
+
+.about-us-right p {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: inherit;
+  color: inherit;
+}
+
+.percent {
+  font-size: 45px;
+  line-height: 46px;
+  color: #000000;
+  font-weight: 700;
+  font-family: inherit;
+}
+
+.sup-percent {
+  vertical-align: top;
+  color: #000000;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 24px;
+}
+
+.partner {
+   margin-top:60px;
+  margin-bottom: 80px;
+   border-bottom: 2px solid #eeeeee;
+   border-top: 2px solid #eeeeee;
+}
+
+.partner-link {
   float: left;
-  width: 300px;
+  position: relative;
+  display: block;
+  width: 290px;
   height: 182px;
+  cursor: pointer;
+  background-image: url(../img/sprite-logo.png);
+}
+
+.partner-link:first-child {
+  background-position: -350px -210px;
+}
+
+.partner-link:first-child:hover {
+  background-position: -31px -210px;
+}
+
+.partner-link:first-child:active {
+  background-position: -350px -210px;
+  opacity: 0.5;
+}
+
+.partner-link:nth-child(2) {
+  background-position: -23px -18px;
+}
+
+.partner-link:nth-child(2):hover {
+  background-position: -352px -18px;
+}
+
+.partner-link:nth-child(2):active {
+  background-position: -23px -18px;
+  opacity: 0.5;
+}
+
+.partner-link:nth-child(3) {
+  background-position: -640px -353px;
+}
+
+.partner-link:nth-child(3):hover {
+  background-position: -660px -181px;
+}
+
+.partner-link:nth-child(3):active {
+  background-position: -640px -353px;
+  opacity: 0.5;
+}
+
+
+.partner-link:last-child {
+  background-position: -280px -408px;
+}
+
+.partner-link:last-child:hover {
+  background-position: 13px -408px;
+}
+
+.partner-link:last-child:active {
+  background-position: -280px -408px;
+  opacity: 0.5;
 }
 
 .map {
