@@ -53,6 +53,37 @@ html {
   width: 450px;
 }
 
+.main-navigation a {
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #333333;
+  text-decoration: none;
+}
+
+.main-navigation ul {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  list-style: none;
+}
+
+.main-navigation li {
+  display: inline-block;
+  margin-right: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  padding-top: 29px;
+  text-transform: uppercase;
+  color: #333333;
+  vertical-align: top;
+}
+
+.main-navigation li:last-child {
+  margin-right: 0;
+}
+
 .buy-block {
   padding-top: 29px;
   float: right;
@@ -272,7 +303,7 @@ html {
 
 .partner {
    margin-top:60px;
-  margin-bottom: 80px;
+  margin-bottom: 77px;
    border-bottom: 2px solid #eeeeee;
    border-top: 2px solid #eeeeee;
 }
@@ -283,9 +314,23 @@ html {
   display: block;
   width: 290px;
   height: 182px;
+  font-size: 0;
   cursor: pointer;
   background-image: url(../img/sprite-logo.png);
 }
+
+.partner-link:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 52px;
+  top: 60px;
+  left: 0px;
+  background-color: #eeeeee;
+}
+
+
 
 .partner-link:first-child {
   background-position: -350px -210px;
@@ -341,15 +386,125 @@ html {
 }
 
 .map {
+  position: relative;
   width: 1440px;
+  height: 416px;
   margin-left: -140px;
+  padding-top: 50px;
+  background: url("../img/map-static.jpg") no-repeat;
+  
 }
 
+.map-marker {
+  position: absolute;
+  left:820px;
+  top:90px;
+  width: 231px;
+  height: 190px;
+  background: url("../img/map-marker.png") no-repeat;
+  
+}
+
+.map-write-us {
+  margin-left: 140px;
+  padding-top: 52px;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 320px;
+  min-height: 309px;
+  background-color: #ffffff;
+}
+
+.map-write-us-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  font-family: inherit;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.map-write-us p {
+  margin:0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: inherit;
+  font-weight: 400;
+  color: inherit;
+}
+
+.map-write-us p:nth-child(2) {
+  width: 209px;
+  padding-top: 25px;
+}
+
+.map-write-us p:nth-child(3) {
+  width: 209px;
+  padding-top: 17px;
+}
+
+.write-us-btn {
+  display: block;
+  margin-top: 35px;
+  text-decoration: none;
+  padding: 16px 45px;
+  font-size: inherit;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #fb565a;
+  border-radius: 3px;
+}
 
 .main-footer-social {
   float: left;
   width: 300px;
+  font-size: 0;
 }
+
+.main-footer-social a {
+  display: inline-block;
+  margin-right: 13px;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background: #e1e1e1 url("../img/social-sprite.png");
+}
+
+.main-footer-social a:first-child {
+  background-position: -265px -133px;
+}
+
+.main-footer-social a:nth-child(2) {
+  background-position: -128px -23px;
+}
+
+.main-footer-social a:last-child {
+  background-position: -143px -143px;
+}
+
+.main-footer-social a:hover {
+  background-color: #e74246;
+}
+
+.main-footer-social a:active {
+  background-color:  #d7373b;
+}
+
+.main-footer-social a:first-child:active {
+  background-position: -247px -18px;
+}
+
+.main-footer-social a:nth-child(2):active {
+  background-position: -16px -23px;
+}
+
+.main-footer-social a:last-child:active {
+  background-position: -22px -143px;
+}
+
 
 .main-footer-text {
   float: left;
@@ -362,37 +517,22 @@ html {
   padding-bottom: 68px;
 }
 
-.main-navigation a {
-  font-weight: 500;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: #333333;
-  text-decoration: none;
-}
-
-.main-navigation ul {
-  padding: 0;
+.footer-text {
   margin: 0;
-  font-size: 0;
-  list-style: none;
+  padding-top: 5px;
+  font-size: 36px;
+  line-height: 38px;
+  color: #000000;
+  font-weight: 700;
+  
+  font-family: inherit;
 }
 
-.main-navigation li {
-  display: inline-block;
-  margin-right: 50px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 30px;
-  padding-top: 29px;
-  text-transform: uppercase;
-  color: #333333;
-  vertical-align: top;
+.main-footer-text p {
+  margin: 0;
+  padding: 0;
+  padding-top: 7px;
 }
-
-.main-navigation li:last-child {
-  margin-right: 0;
-}
-
 
 
 
