@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Nerds каталог</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+ <header class="main-header">
+     <div class="container clearfix">
+        <div class="header-logo">
+          <a class="logo-link"></a></div>
+        <nav class="main-navigation">
+         <ul>
+           <li>
+             <a href="#">Студия</a>
+           </li>
+           <li>
+             <a href="#">Клиенты</a>
+           </li>
+           <li class="active">
+             <a class="link-active" href="#">Магазин</a>
+           </li>
+           <li>
+             <a href="#">Контакты</a>
+           </li>
+         </ul>
+        </nav>
+        <div class="buy-block">
+         <a class="buy-link" href="#">Корзина</a>
+        </div>
+      </div>
+      <div class="header-title">
+        <h1>Магазин готовых шаблонов</h1>
+      </div>
+ </header>
+  <main class="container clearfix">
+    <section class="filter">
+      <h2>Стоимость:</h2>
+      <form action="#" method="get">
+       <div class="range-filter">
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar"></div>
+          </div>
+          <div class="toggle toggle-min"></div>
+          <div class="toggle toggle-max"></div>
+        </div>
+        <div class="price-controls">
+          <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+          <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+        </div>
+        </div>
+        <fieldset class="filter-radio">
+          <h2>Сетка:</h2>
+          <ul class="filter-radio-list">
+                            <li class="radio-item">
+                                <input type="radio" name="web" id="adapt">
+                                <label for="adapt">Адаптивная</label>
+                            </li>
+                            <li class="radio-item">
+                                <input type="radio" name="web" id="fixed">
+                                <label for="fixed">Фиксированная</label>
+                            </li>
+                            <li class="radio-item">
+                                <input type="radio" name="web" id="rubber">
+                                <label for="rubber">Резиновая</label>
+                            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter-checkbox">
+          <h2>Особенности:</h2>
+                  <ul class="filter-check-list">
+                            <li class="check-item">
+                                <input type="checkbox" name="slider" id="slider">
+                                <label for="slider">Слайдер</label>
+                            </li>
+                            <li class="check-item">
+                                <input type="checkbox" name="block" id="block">
+                                <label for="block">Блок преимуществ</label>
+                            </li>
+                            <li class="check-item">
+                                <input type="checkbox" name="news" id="news">
+                                <label for="news">Новости</label>
+                            </li>
+                            <li class="check-item">
+                                <input type="checkbox" name="galery" id="galery">
+                                <label for="galery">Галерея</label>
+                            </li>
+                            <li class="check-item">
+                                <input type="checkbox" name="buy-box" id="buy-box">
+                                <label for="buy-box">Корзина</label>
+                            </li>
+          </ul>
+                                      
+        </fieldset>
+      </form>
+    </section>
+    <section class="result"></section>
+    <section class="paginator"></section>
+  </main>
+
+<footer class="main-footer">
+      <div class="container clearfix">
+        <div class="main-footer-social">
+           <a class="social-btn social-btn-vk" href="#">VK</a>
+           <a class="social-btn social-btn-fb" href="#">Face Book</a>
+           <a class="social-btn social-btn-inst" href="#">Instagram</a>
+        </div>
+        <div class="main-footer-text">
+          <p class="footer-text">Давайте дружить, это выгодно!</p>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

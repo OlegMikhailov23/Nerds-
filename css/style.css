@@ -672,6 +672,280 @@ html {
   color: rgba(255, 255, 255, 0.3);
 }
 
+/*Страница каталога*/
+
+.main-header h1 {
+  margin: 0;
+  padding: 0;
+  padding-top: 80px;
+  padding-bottom: 107px;
+  font-size: 55px;
+  line-height: 56px;
+  font-weight: 500;
+  color: #000000;
+  text-align: center;
+}
+
+.main-navigation .active {
+    position: relative;
+}
+
+.main-navigation .active::after {
+    content:  "";
+    display: block;
+    position: absolute;
+    width: auto;
+    bottom: -4px;
+    left: 0px;
+    right: 0px;
+    height: 2px;
+    background-color: #fb565a;
+}
+
+.filter {
+  float: left;
+  width: 260px;
+  min-height: 840px;
+}
+
+.filter h2 {
+  padding: 0;
+  margin: 0;
+  padding-top: 55px; 
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: inherit;
+}
+
+.range-filter {
+  margin-top: 49px;
+  width: 260px;
+}
+
+.range-controls {
+  position: relative;
+  height: 80px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 71%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+    position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  cursor: pointer;
+  box-sizing: content-box;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border: 8px solid #ffffff;
+  background: #ababab;
+}
+
+.range-controls .toggle:hover {
+  background: #fb565a;
+}
+
+.range-controls .toggle-min {
+  left: 7%;
+}
+
+.range-controls .toggle-max {
+  left: 62%;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  font-size: 16px;
+  line-height: 22px;
+  display: inline-block;
+  text-transform: uppercase;
+  width: 50%;
+}
+
+.price-controls label:nth-child(2) {
+  padding-left: 13px;
+}
+
+.price-controls input {
+  margin-left: 7px;
+  font-family: inherit;
+  font-size: 16px;
+  text-align: center;
+  color: #333333;
+  width: 80px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 3px;
+  background: #eeeeee;
+  outline: none;
+}
+
+.filter fieldset {
+  padding: 0;
+  margin-bottom: 0;
+  border: 0;
+}
+
+.filter ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.filter-radio input[type="radio"] {
+    display: none;
+}
+
+.filter-radio input[type="radio"] + label {
+  display: block;
+  position: relative;
+  padding-top: 20px;
+  padding-left: 34px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+  cursor: pointer;
+}
+
+.filter-radio input[type="radio"] + label::before {
+    content: "";
+    display: block;
+    width: 17px;
+    height: 17px;
+    border: 4px solid #b8b8b8;
+    border-radius: 50%;
+    position: absolute;
+    box-sizing: content-box;
+    top: 14px;
+    left: 0;
+}
+
+.filter-radio input[type="radio"]:checked + label::after {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    background: #b8b8b8; 
+    border-radius: 50%;
+    top: 23px;
+    left: 9px;
+}
+
+.filter-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.filter-checkbox input[type="checkbox"] + label {
+      display: block;
+  position: relative;
+  padding-top: 20px;
+  padding-left: 34px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+  cursor: pointer;
+}
+
+.filter-checkbox h2 {
+  padding-top: 43px;
+}
+
+.filter-checkbox li {
+  margin-top: -2px;
+}
+
+.filter-checkbox input[type="checkbox"] + label::before {
+    content: "";
+    display: block;
+    width: 23px;
+    height: 22px;
+    background: url("../img/checkbox-off.png") no-repeat;
+    position: absolute;
+    top: 16px;
+    left: 0;
+}
+
+.filter-checkbox input[type="checkbox"]:checked + label::before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 22px;
+    background: url("../img/checkbox-on.png") no-repeat;
+    position: absolute;
+    top: 16px;
+    left: 0;
+}
+/*
+filters-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.filters-checkbox input[type="checkbox"] + label {
+    display: block;
+    line-height: 21px;
+    padding-left: 43px;
+    position: relative;
+    cursor: pointer;
+}
+
+.filters-checkbox input[type="checkbox"] + label::before {
+    content: "";
+    display: block;
+    width: 23px;
+    height: 22px;
+    background: url("../img/check-empty.png") no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.filters-checkbox input[type="checkbox"]:checked + label::before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 22px;
+    background: url("../img/check.png") no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.filters-checkbox input[type="checkbox"]:disabled + label::before {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url("../img/check-disabled.png") no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+*/
+/*Страница каталога*/
+
 .modal-content {
   position: absolute;
   top: 1706px;
