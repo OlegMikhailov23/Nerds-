@@ -950,10 +950,15 @@ html {
 .product-card {
   position: relative;
   display: inline-block;
+  margin-bottom: 35px;
   width: 360px;
   height: 615px;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.product-card:nth-child(odd) {
+  margin-left: 40px;
 }
 
 
@@ -1063,6 +1068,114 @@ html {
  box-shadow: 0 0 5px 2px rgba( 0, 0 , 0 , 0.3)
 }
 
+.result-title {
+  position: relative;
+  font-size: 0;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+.result-title h2 {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 19px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  font-family: inherit;
+}
+
+.result-title .result-title-sort {
+  display: inline-block;
+  margin-right: 28px;
+  vertical-align: top;
+  padding-top: 3px;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  font-family: inherit;
+  text-transform: uppercase;
+}
+
+.result-title a:nth-child(2)
+{
+  margin-left: 270px;
+}
+
+.result-title-arrow {
+  position: absolute;
+  display: inline-block;
+  vertical-align: top;
+  border: 5px solid transparent;	
+  border-top: 11px solid #cccccc;
+}
+
+.result-title a:nth-child(5) {
+  top: 63px;
+  right: 30px;
+}
+
+.result-title a:nth-child(6) {
+  top: 35px;
+  right: 0px;
+  transform: rotate(180deg);
+}
+
+.pagenator {
+  float: right;
+  margin-right: 260px;
+  margin-top: 33px;
+  width: 500px;
+  font-size: 0;
+  
+}
+
+.pagenator .pagenator-btn {
+  display: inline-block;
+  margin-right: 10px;;
+  padding: 12px 18px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #000000;
+  font-family: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 3px;
+  background: #eeeeee;
+  border: 3px solid #eeeeee;
+}
+
+.pagenator .next {
+  margin: 0;
+  padding: 12px 75px;
+  
+}
+
+.pagenator .pagenator-btn:not(.pagenator-active):hover {
+  background: #dfdfdf;
+  border: 3px solid #dfdfdf;
+}
+
+.pagenator .pagenator-btn:not(.pagenator-active):active{
+  background: #d5d5d5;
+  border: 3px solid #d5d5d5;
+  color: rgba( 0, 0, 0, 0.3)
+}
+
+.pagenator .pagenator-active {
+  background: #ffffff;
+  border: 3px solid #dbdbdb;
+}
+
+.catalog-map {
+  float: left;
+  margin-top: 60px;
+}
 /*
 filters-checkbox input[type="checkbox"] {
     display: none;
@@ -1123,6 +1236,11 @@ filters-checkbox input[type="checkbox"] {
   background: #ffffff;
   box-shadow: 0 3px 30px 0px #616262;
 }
+
+.modal-content-catalog {
+  top: 2500px;
+}
+
 
 @keyframes bounce {
   0%   {
