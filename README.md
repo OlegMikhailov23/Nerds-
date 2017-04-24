@@ -1,2 +1,2 @@
 # Nerds-
-This site is making for train by Mikhailov OLeg.
+This site has been produced for train by Mikhailov OLeg.
