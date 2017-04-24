@@ -4,9 +4,10 @@
 <head>
     <meta charset="utf-8">
     <title>Nerds каталог</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/mini-style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -63,7 +64,7 @@
                     <h2>Сетка:</h2>
                     <ul class="filter-radio-list">
                         <li class="radio-item">
-                            <input type="radio" name="web" id="adapt">
+                            <input type="radio" name="web" id="adapt" disabled checked>
                             <label for="adapt">Адаптивная</label>
                         </li>
                         <li class="radio-item">
@@ -80,7 +81,7 @@
                     <h2>Особенности:</h2>
                     <ul class="filter-check-list">
                         <li class="check-item">
-                            <input type="checkbox" name="slider" id="slider">
+                            <input type="checkbox" name="slider" id="slider" disabled checked>
                             <label for="slider">Слайдер</label>
                         </li>
                         <li class="check-item">
@@ -107,10 +108,10 @@
         <section class="result">
             <div class="result-title">
                 <h2>Сортировать:</h2>
-                <a class="result-title-sort" href="#">по цене</a>
+                <a class="result-title-sort sort-active" href="#">по цене</a>
                 <a class="result-title-sort" href="#">по типу</a>
                 <a class="result-title-sort" href="#">по названию</a>
-                <a class="result-title-arrow" href="#">вниз</a>
+                <a class="result-title-arrow arrow-active" href="#">вниз</a>
                 <a class="result-title-arrow" href="#">вверх</a>
             </div>
             <article class="product-card">
@@ -238,7 +239,7 @@
     </footer>
     <div class="modal-content modal-content-catalog">
         <p>Напишите нам!</p>
-        <form mothod="post" action="#">
+        <form action="#" method="post">
             <div class="half-width">
                 <label>Ваше имя:
                     <input class="name" type="text" name="name" placeholder="Предсавьтесь, пожалуйста">
@@ -250,13 +251,13 @@
                 </label>
             </div>
             <label>Текст письма:
-                <textarea type="text" name="letter" rows="5" cols="92" placeholder="В свободной форме"></textarea>
+                <textarea name="letter" rows="5" placeholder="В свободной форме"></textarea>
             </label>
             <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
             <button class="send-btn" type="submit" value="Отправить" title="Отправить">Отправить</button>
         </form>
     </div>
-    <script src="js/script.js"></script>
+    <script src="js/mini-script.js"></script>
 </body>
 
 </html>
