@@ -46,7 +46,7 @@ html {
   background-position: -718px -60px;
 }
 
-.header-logo a {
+.header-logo .logo-link, .header-logo .main-logo-link {
   display: block;
   width: 160px;
   height: 65px;
@@ -54,11 +54,11 @@ html {
   background: url("../img/nerds-logo.png");
 }
 
-.header-logo a:hover {
+.header-logo .logo-link:hover {
   opacity: 0.8;
 }
 
-.header-logo a:active {
+.header-logo .logo-link:active {
   opacity: 0.3;
 }
 
@@ -76,7 +76,7 @@ html {
   text-decoration: none;
 }
 
-.main-navigation a:hover {
+.main-navigation a:hover:not(.link-active) {
   color: #ff6666;
 }
 
@@ -1012,7 +1012,6 @@ html {
   top: 385px;
   left: 0;
   background: #eeeeee;
-  z-index: 1000;
 }
 
 .product-card-details h2 {
@@ -1032,9 +1031,29 @@ html {
   padding: 0;
   margin: 0;
   padding-top: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
+  text-align: center;
+}
+
+.product-card:first-of-type p {
   padding-left: 80px;
   padding-right: 80px;
-  text-align: center;
+} 
+
+.product-card:nth-of-type(2) p {
+  padding-left: 65px;
+  padding-right: 65px;
+} 
+
+.product-card:nth-of-type(3) p {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.product-card:nth-of-type(4) p {
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .price-btn {
@@ -1176,52 +1195,7 @@ html {
   float: left;
   margin-top: 60px;
 }
-/*
-filters-checkbox input[type="checkbox"] {
-    display: none;
-}
 
-.filters-checkbox input[type="checkbox"] + label {
-    display: block;
-    line-height: 21px;
-    padding-left: 43px;
-    position: relative;
-    cursor: pointer;
-}
-
-.filters-checkbox input[type="checkbox"] + label::before {
-    content: "";
-    display: block;
-    width: 23px;
-    height: 22px;
-    background: url("../img/check-empty.png") no-repeat;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.filters-checkbox input[type="checkbox"]:checked + label::before {
-    content: "";
-    display: block;
-    width: 25px;
-    height: 22px;
-    background: url("../img/check.png") no-repeat;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.filters-checkbox input[type="checkbox"]:disabled + label::before {
-    content: "";
-    display: block;
-    width: 22px;
-    height: 22px;
-    background: url("../img/check-disabled.png") no-repeat;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-*/
 /*Страница каталога*/
 
 .modal-content {

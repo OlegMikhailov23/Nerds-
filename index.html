@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-
 <head>
     <meta charset="utf-8">
     <title>Nerds главная</title>
@@ -9,230 +8,169 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
     <header class="main-header">
-     <div class="container clearfix">
-        <div class="header-logo">
-          <a class="logo-link"></a></div>
-        <nav class="main-navigation">
-         <ul>
-           <li>
-             <a href="#">Студия</a>
-           </li>
-           <li>
-             <a href="#">Клиенты</a>
-           </li>
-           <li>
-             <a href="#">Магазин</a>
-           </li>
-           <li>
-             <a href="#">Контакты</a>
-           </li>
-         </ul>
-        </nav>
-        <div class="buy-block">
-         <a class="buy-link" href="#">Корзина</a>
-        </div>
-        <div class="slider clearfix">
-          <input type="radio" id="btn-1" name="toggle" checked>
-          <input type="radio" id="btn-2" name="toggle">
-          <input type="radio" id="btn-3" name="toggle">
-        <div class="slider-controls">
-          <label for="btn-1"></label>
-          <label for="btn-2"></label>
-          <label for="btn-3"></label>
-         <!-- <i class="active"></i>
-          <i></i>
-          <i></i>-->
-        </div>
-        <div class="slides">
-           <div class="slide">
-           <div class="slide-text">
-            <div class="slide-title">Долго, дорого, скрупулезно.</div>
-            <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-            <a href="#">Узнать больше</a>
-           </div>
-           </div>
-            <div class="slide">
-           <div class="slide-text">
-            <div class="slide-title">Любим математику как никто другой</div>
-            <p>Никакого креатива, только математические формулы 
-для расчета идеальных пропорций.</p>
-            <a href="#">Узнать больше</a>
-           </div>
-           </div>
-           <div class="slide">
-           <div class="slide-text">
-            <div class="slide-title">Только ночь, только хардкор</div>
-            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <a href="#">Узнать больше</a>
+        <div class="container clearfix">
+            <div class="header-logo">
+                <a class="main-logo-link"></a>
             </div>
-           </div>
-        </div>
-       <!--
-         <div class="slide">
-           <div class="slide-text">
-            <div class="slide-title">Любим математику как никто другой</div>
-            <p>Никакого креатива, только математические формулы 
-для расчета идеальных пропорций.</p>
-            <a href="#">Узнать больше</a>
-           </div>
-         </div>
-         <div class="slide">
-           <div class="slide-text">
-            <div class="slide-title">Только ночь, только хардкор</div>
-            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <a href="#">Узнать больше</a>-->
-           
-         </div>
-        
-        
-     
-      
+            <nav class="main-navigation">
+                <ul>
+                    <li>
+                        <a href="#">Студия</a>
+                    </li>
+                    <li>
+                        <a href="#">Клиенты</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html">Магазин</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="buy-block">
+                <a class="buy-link" href="#">Корзина</a>
+            </div>
+            <div class="slider clearfix">
+                <input type="radio" id="btn-1" name="toggle" checked>
+                <input type="radio" id="btn-2" name="toggle">
+                <input type="radio" id="btn-3" name="toggle">
+                <div class="slider-controls">
+                    <label for="btn-1"></label>
+                    <label for="btn-2"></label>
+                    <label for="btn-3"></label>
+                </div>
+                <div class="slides">
+                    <div class="slide">
+                        <div class="slide-text">
+                            <div class="slide-title">Долго, дорого, скрупулезно.</div>
+                            <p>Математически выверенный дизайн
+                                <br> для вашего сайта или мобильного приложения.</p>
+                            <a href="#">Узнать больше</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-text">
+                            <div class="slide-title">Любим математику как никто другой</div>
+                            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                            <a href="#">Узнать больше</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-text">
+                            <div class="slide-title">Только ночь, только хардкор</div>
+                            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                            <a href="#">Узнать больше</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </header>
     <main class="container clearfix">
-       <section class="service clearfix">
-          <div class="service-block">
-           <img src="img/websites.jpg" width="300" height="146" alt="Веб-сайты">
-           <h3>Веб-сайты</h3>
-           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-           <a class="order-btn" href="#">Заказать</a>
-          </div>
-         <div class="service-block">
-           <img src="img/application.jpg" width="300" height="146" alt="Приложения">
-           <h3>Приложения</h3>
-           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-           <a class="order-btn" href="#">Заказать</a>
-         </div>
-         <div class="service-block">
-           <img src="img/presentation.jpg" width="300" height="146" alt="Веб-сайты">
-           <h3>Презентации</h3>
-           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-           <a class="order-btn" href="#">Заказать</a>
-         </div>
-       </section>
-       <section class="about-us clearfix">
-         <div class="about-us-left">
-           <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
-           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-           <h4>Выполняем заказы на разработку:</h4>
-           <ul>
-             <li>Веб-сайтов любой сложности</li>
-             <li>Мобильных приложений для iOS и Android</li>
-             <li>Слайдшоу и видео для корпоративных презентаций</li>
-           </ul>
-         </div>
-         <div class="about-us-right">
-           <img src="img/nerds-illustration.png" width="360" height="208"  alt="Nerds">
-             <h4>C 2004 года Любим точность во всем:</h4>
-             <ul>
-               <li>
-                 <span class="percent">146</span><span class="sup-percent">%</span>
-                 <p>Уровень самоотдачи</p>
-               </li>
-               <li>
-                 <span class="percent">100</span><span class="sup-percent">%</span>
-                 <p>Соблюдение сроков</p>
-               </li>
-               <li>
-                 <span class="percent">50</span><span class="sup-percent">%</span>
-                 <p>Минимальная предоплата</p>
-               </li>
-             </ul>
-         </div>
-       </section>
-       <section class="partner clearfix">
-         
-           <a href="#" class="partner-link">Html academy</a>
-           <a href="#" class="partner-link">Borodinski</a>
-           <a href="#" class="partner-link">Pink</a>
-           <a href="#" class="partner-link">Mishka</a>
-         
-         
-       </section>
-       <section class="map">
-        <div class="map-marker"></div>
-         <div class="map-write-us">
-           <span class="map-write-us-title">NЁRDS DESIGN STUDIO</span>
-           <p>191186, Санкт-Петербург, 
-ул. Б. Конюшенная, д. 19/8</p>
-        <p>тел. +7 (812) 275-75-75</p>
-        <a href="#" class="write-us-btn">Напишите нам</a>
-         </div>
-       </section>
+        <section class="service clearfix">
+            <div class="service-block">
+                <img src="img/websites.jpg" width="300" height="146" alt="Веб-сайты">
+                <h3>Веб-сайты</h3>
+                <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+                <a class="order-btn" href="#">Заказать</a>
+            </div>
+            <div class="service-block">
+                <img src="img/application.jpg" width="300" height="146" alt="Приложения">
+                <h3>Приложения</h3>
+                <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+                <a class="order-btn" href="#">Заказать</a>
+            </div>
+            <div class="service-block">
+                <img src="img/presentation.jpg" width="300" height="146" alt="Веб-сайты">
+                <h3>Презентации</h3>
+                <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+                <a class="order-btn" href="#">Заказать</a>
+            </div>
+        </section>
+        <section class="about-us clearfix">
+            <div class="about-us-left">
+                <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
+                <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+                <h4>Выполняем заказы на разработку:</h4>
+                <ul>
+                    <li>Веб-сайтов любой сложности</li>
+                    <li>Мобильных приложений для iOS и Android</li>
+                    <li>Слайдшоу и видео для корпоративных презентаций</li>
+                </ul>
+            </div>
+            <div class="about-us-right">
+                <img src="img/nerds-illustration.png" width="360" height="208" alt="Nerds">
+                <h4>C 2004 года Любим точность во всем:</h4>
+                <ul>
+                    <li>
+                        <span class="percent">146</span><span class="sup-percent">%</span>
+                        <p>Уровень самоотдачи</p>
+                    </li>
+                    <li>
+                        <span class="percent">100</span><span class="sup-percent">%</span>
+                        <p>Соблюдение сроков</p>
+                    </li>
+                    <li>
+                        <span class="percent">50</span><span class="sup-percent">%</span>
+                        <p>Минимальная предоплата</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="partner clearfix">
+            <a href="#" class="partner-link">Html academy</a>
+            <a href="#" class="partner-link">Borodinski</a>
+            <a href="#" class="partner-link">Pink</a>
+            <a href="#" class="partner-link">Mishka</a>
+        </section>
+        <section class="map">
+            <div class="map-marker"></div>
+            <div class="map-write-us">
+                <span class="map-write-us-title">NЁRDS DESIGN STUDIO</span>
+                <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                <p>тел. +7 (812) 275-75-75</p>
+                <a href="#" class="write-us-btn">Напишите нам</a>
+            </div>
+        </section>
     </main>
     <footer class="main-footer">
-      <div class="container clearfix">
-        <div class="main-footer-social">
-           <a class="social-btn social-btn-vk" href="#">VK</a>
-           <a class="social-btn social-btn-fb" href="#">Face Book</a>
-           <a class="social-btn social-btn-inst" href="#">Instagram</a>
+        <div class="container clearfix">
+            <div class="main-footer-social">
+                <a class="social-btn social-btn-vk" href="#">VK</a>
+                <a class="social-btn social-btn-fb" href="#">Face Book</a>
+                <a class="social-btn social-btn-inst" href="#">Instagram</a>
+            </div>
+            <div class="main-footer-text">
+                <p class="footer-text">Давайте дружить, это выгодно!</p>
+                <p>Скидка 10% для друзей из социальных сетей.</p>
+            </div>
         </div>
-        <div class="main-footer-text">
-          <p class="footer-text">Давайте дружить, это выгодно!</p>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </div>
-      </div>
     </footer>
     <div class="modal-content">
-     <p>Напишите нам!</p>
-     <form mothod="post" action="#">
-      <div class="half-width">
-       <label >Ваше имя:<input class="name" type="text"  name="name" placeholder="Предсавьтесь, пожалуйста"></label>
-       </div>
-       <div class="half-width">
-       <label>Ваш e-mail:<input type="text" name="mail" placeholder="Для отправки ответа" required></label>
-      </div>
-      <label>Текст письма:<textarea type="text" name="letter" rows="5" cols="92" placeholder="В свободной форме"></textarea></label>
-      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-      <button class="send-btn" type="submit" value="Отправить" title="Отправить">Отправить</button>
-      </form>
+        <p>Напишите нам!</p>
+        <form mothod="post" action="#">
+            <div class="half-width">
+                <label>Ваше имя:
+                    <input class="name" type="text" name="name" placeholder="Предсавьтесь, пожалуйста">
+                </label>
+            </div>
+            <div class="half-width">
+                <label>Ваш e-mail:
+                    <input type="text" name="mail" placeholder="Для отправки ответа" required>
+                </label>
+            </div>
+            <label>Текст письма:
+                <textarea type="text" name="letter" rows="5" cols="92" placeholder="В свободной форме"></textarea>
+            </label>
+            <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+            <button class="send-btn" type="submit" value="Отправить" title="Отправить">Отправить</button>
+        </form>
     </div>
-    <script>
-         var link = document.querySelector(".write-us-btn");
-      
-         var popup = document.querySelector(".modal-content");
-      
-         var close = popup.querySelector(".modal-content-close");
-      
-         var login = popup.querySelector(".name");
-      
-         var form = popup.querySelector("form");
-      
-         var mail = popup.querySelector("[name=mail]");
-      
-         var storage = localStorage.getItem("login");
-      
-         link.addEventListener("click", function(event) {
-         event.preventDefault();
-         popup.classList.add("modal-content-show");
-         if (storage) {
-          login.value = storage;
-          mail.focus();
-        } else {
-         login.focus()};
-      });
-      
-         close.addEventListener("click", function(event) {
-         event.preventDefault();
-         popup.classList.remove("modal-content-show");
-      });
-      
-         form.addEventListener("submit", function(event) {
-        if (!login.value || !mail.value) {
-          event.preventDefault(); 
-        } else {
-          localStorage.setItem("login", login.value);
-        }
-      });
-      
-      window.addEventListener("keydown", function(event) {
-        if (event.keyCode === 27) {
-          if (popup.classList.contains("modal-content-show")) {
-            popup.classList.remove("modal-content-show");
-          }
-        }
-      });
-      </script>
+    <script src="js/script.js">
+    </script>
 </body>
+
 </html>
