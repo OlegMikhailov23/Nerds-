@@ -7,7 +7,7 @@ body {
     color: #333333;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif, "Arial", sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
 }
 
 .clearfix::after {
@@ -94,6 +94,7 @@ html {
 
 .main-navigation li {
     display: inline-block;
+    vertical-align: top;
     margin-right: 50px;
     font-size: 16px;
     font-weight: 500;
@@ -101,7 +102,6 @@ html {
     padding-top: 29px;
     text-transform: uppercase;
     color: #333333;
-    vertical-align: top;
 }
 
 .main-navigation li:last-child {
@@ -169,12 +169,12 @@ html {
 
 .slider-controls label {
     display: inline-block;
+    vertical-align: top;
     width: 18px;
     height: 18px;
     margin: 0 3px;
     background: white;
     border: 5px solid white;
-    vertical-align: top;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -222,6 +222,7 @@ html {
 
 .slide-text a {
     display: inline-block;
+    vertical-align: top;
     margin-top: 18px;
     margin-bottom: ;
     padding: 17px 53px;
@@ -444,6 +445,7 @@ html {
 
 .about-us-right li {
     display: inline-block;
+    vertical-align: top;
     width: 110px;
     margin-right: 10px;
 }
@@ -747,9 +749,10 @@ html {
 }
 
 .price-controls label {
+    display: inline-block;
+    vertical-align: top;
     font-size: 16px;
     line-height: 22px;
-    display: inline-block;
     text-transform: uppercase;
     width: 50%;
 }
@@ -946,6 +949,7 @@ html {
 .product-card {
     position: relative;
     display: inline-block;
+    vertical-align: top;
     margin-bottom: 35px;
     width: 360px;
     height: 615px;
@@ -1052,10 +1056,10 @@ html {
 
 .price-btn {
     display: inline-block;
+    vertical-align: top;
     padding: 16px 60px;
     margin-top: 28px;
     margin-left: 80px;
-    vertical-align: top;
     text-align: center;
     font-size: 16px;
     line-height: 18px;
@@ -1185,8 +1189,8 @@ html {
 
 .pagenator .pagenator-btn {
     display: inline-block;
+    vertical-align: top;
     margin-right: 10px;
-    ;
     padding: 12px 18px;
     font-size: 16px;
     line-height: 18px;
@@ -1344,6 +1348,7 @@ html {
 
 .half-width {
     display: inline-block;
+    vertical-align: top;
     width: 360px;
     margin-bottom: 35px;
 }
@@ -1422,6 +1427,7 @@ html {
 
 .main-footer-social a {
     display: inline-block;
+    vertical-align: top;
     margin-right: 13px;
     width: 78px;
     height: 78px;
